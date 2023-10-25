@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem vindo</title>
+    <link rel="stylesheet" href="{% static 'mestyle.css' %}">
 </head>
+
 <body>
     <p>Seja bem-vindo(a) à minha página de apresentação</p>
 
@@ -13,5 +15,6 @@
         {% csrf_token %}
         <button type="submit">Entrar</button>
     </form>
+
 </body>
 </html>
