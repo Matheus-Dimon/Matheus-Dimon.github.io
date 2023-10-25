@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'templates/index.html')
+    return render(request, 'index.html')
 
 def welcome(request):
-    return render(request, 'templates/welcome.html')
+    return render(request, 'welcome.html')

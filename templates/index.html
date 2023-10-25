@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,30 +7,33 @@
     <title>Apresentação</title>
 </head>
 <body>
-    <img src="{% static 'mefoto.png' %}" alt="perfil" id="foto">
-
-    <div>
-    <p>sobre mim</p>
-    <p>Desenvolvedor fullstack com foco em 
-        django integrado com js,html,react,sql,css,rest.
-    </p>
+    <div id = "foto">
+        <img src="{% static 'img/mefoto.png' %}" alt="logotipo" class="foto">
     </div>
 
     <div>
-    <p>contato</p>
-    <p>linkedin.com/in/matheus-elias-martins-dimon-b71048154</p>
-    <p>matheus.dimon@gmail.com</p>
+        <p>sobre mim</p>
+        <p>Desenvolvedor fullstack com foco em 
+            django integrado com JS, HTML, React, SQL, CSS, REST.
+        </p>
+    </div>
+
+    <div>
+        <p>Contato</p>
+        <p><a href="https://www.linkedin.com/in/matheus-elias-martins-dimon-b71048154">LinkedIn</a></p>
+        <p><a href="mailto:matheus.dimon@gmail.com">matheus.dimon@gmail.com</a></p>
     </div>
     
     <div>
-    <p>redes sociais</p>
-    <p>instagram.com/matheus_dimon/</p>
-    <p>https://www.facebook.com/matheuselias.martinsdimon</p>
+        <p>Redes Sociais</p>
+        <p><a href="https://instagram.com/matheus_dimon">Instagram</a></p>
+        <p><a href="https://www.facebook.com/matheuselias.martinsdimon">Facebook</a></p>
     </div>
 
     <div>
-    <p>portifólio</p>
-    <p>https://github.com/Matheus-Dimon</p>
+        <p>Portfólio</p>
+        <p><a href="https://github.com/Matheus-Dimon">GitHub</a></p>
     </div>
+    
 </body>
 </html>
