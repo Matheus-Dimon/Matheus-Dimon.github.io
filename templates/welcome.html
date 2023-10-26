@@ -14,13 +14,19 @@
 </head>
 
 <body id="background">
-    <p class="container" id = "titulo">Esta é minha página de apresentação</p>
-    <form action="{% url 'index' %}" method="post">
-        {% csrf_token %}
-        <button class="container" id="but" onmouseout="sair()" onmouseenter="entrar()">
-        Entrar
-        </button>
-    </form>
+    <div >
+        <p class='glowing-btn' id="container">Esta é minha página de apresentação</p>
+        <form action="{% url 'index' %}" method="post">
+            {% csrf_token %}
+            <button   class='glowing-btn' id="but" onmouseout="sair()" onmouseenter="entrar()">
+                <span class='glowing-txt'>E<span class='faulty-letter'>nt</span>rar</span>
+            
+            </button>
+        </form>
+    </div>
+
+
+    
 </body>
 
 
