@@ -1,0 +1,25 @@
+button#but{
+    padding: 100px 100px;
+    background-color:aliceblue;
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+    }
+body#titulo{
+    text-align: center;
+    font-style: italic;
+    font-size: 70px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; 
+    font-size: 50px;
+    background-color: aliceblue;
+}
+
+body{
+    background-color: aliceblue;
+}
