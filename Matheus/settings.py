@@ -21,7 +21,6 @@ ALLOWED_HOSTS = ['.vercel.app']
 # Application definition
 
 INSTALLED_APPS = [
-    "whitenoise.runserver_nostatic",
     'me',
     'django.contrib.admin',
     'django.contrib.auth',
