@@ -1,5 +1,9 @@
 import os
 from pathlib import Path
+import mimetypes
+
+if DEBUG:
+    mimetypes.add_type("image/png", ".png", True)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
