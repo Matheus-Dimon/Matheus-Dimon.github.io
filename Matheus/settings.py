@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^30@=wx2m&2q6l48hxb*y6c%0negga@@eixcj5%-rn^3yzo#^k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['.vercel.app']
 
@@ -112,7 +112,5 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/img/'
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-mimetypes.add_type("text/css", ".css", True)
-mimetypes.add_type("image/png", ".png", True)
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
