@@ -13,7 +13,8 @@ python3.12 -m pip install -r requirements.txt
 echo "Making migrations..."
 python3.12 manage.py makemigrations --noinput
 python3.12 manage.py migrate --noinput
-
+#Install whitenoise
+python3.12 manage.py whitenoise
 # Collect staticfiles
 echo "Collect static..."
 python3.12 manage.py collectstatic --noinput --clear
