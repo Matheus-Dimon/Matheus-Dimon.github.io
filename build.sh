@@ -9,13 +9,10 @@ python3.12 pip install -U pip
 echo "Installing project dependencies..."
 python3.12 -m pip install -r requirements.txt
 
-# Make migrations
 echo "Making migrations..."
 python3.12 manage.py makemigrations --noinput
 python3.12 manage.py migrate --noinput
-#Install whitenoise
-python3.12 manage.py whitenoise
-# Collect staticfiles
+
 echo "Collect static..."
 python3.12 manage.py collectstatic --noinput --clear
 
