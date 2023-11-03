@@ -16,7 +16,5 @@ python3.12 manage.py migrate --noinput
 #Install whitenoise
 python3.12 manage.py whitenoise
 # Collect staticfiles
-echo "Collect static..."
-python3.12 manage.py collectstatic --noinput --clear
 
 echo "Build process completed!"

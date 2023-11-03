@@ -100,15 +100,15 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.2/howto/static-files/
+BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_URL = '/static/'
-MEDIA_URL = '/img/'
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'mewebsite', 'static'),
-)
+STATIC_ROOT = BASE_DIR / 'static'
 
+MEDIA_ROOT = BASE_DIR / 'img'
+MEDIA_URL = '/img/'
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'mewebsite', 'static'),)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
