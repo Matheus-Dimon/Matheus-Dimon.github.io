@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -14,7 +15,7 @@ SECRET_KEY = 'django-insecure-^30@=wx2m&2q6l48hxb*y6c%0negga@@eixcj5%-rn^3yzo#^k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -25,12 +26,14 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    "whitenoise.runserver_nostatic",
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -104,9 +107,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
-STATIC_URL = '/static/'
-MEDIA_URL = '/img/'
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
+STATIC_URL = 'static/'
+STATICFILES_DIRS = os.path.join('me' , 'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Default primary key field type
+# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-STATIC_ROOT = BASE_DIR / "staticfiles"
