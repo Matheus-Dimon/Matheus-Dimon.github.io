@@ -28,10 +28,10 @@
   font-size: x-large;
   font-style: italic;
   position: absolute;
-  text-align: center;
-  align-items: center;
+  text-align: right;
+  align-items: rigth;
   top : 0;
   bottom: 100%;
-  margin-left: 40%;
-  
+  margin-left: 80%;
 }
+
