@@ -1,6 +1,8 @@
 #sobre {
   font-size:large;
   text-align: left;
+  top:30%;
+  position:relative;
 }
 
 #foto{
@@ -23,10 +25,13 @@
   text-decoration: none;
   }
 .ferramentas {
-    position: absolute;
-    text-align: center;
-    align-items: center;
-    top : 0;
-    bottom: 100%;
-    margin-left: 50%;
+  font-size: x-large;
+  font-style: italic;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  top : 0;
+  bottom: 100%;
+  margin-left: 40%;
+  
 }
