@@ -1,11 +1,11 @@
 #sobre {
-  font-size:xx-large;
-  text-align: center;
+  font-size:large;
+  text-align: left;
 }
 
 #foto{
-  text-align: center;
-  border-radius: 100px;
+  text-align: left;
+  border-radius: 150px;
   border-style: groove;
 }
 
@@ -16,11 +16,13 @@
 
 .buttonstyle{
   background-color: aliceblue;
+  text-align: right ;
+  
 }
 
 .btn.btn-secondary.btn-lg{
   background-color: rgb(120, 120, 212);
-  
+
 }
 
 #fonte{
